@@ -12,10 +12,8 @@
 
 ## Windows PowerShell
 ```powershell
+Заполнить .env по экземпляру .env_example
 py -m pip install -r requirements.txt
-$env:COPERNICUS_CLIENT_ID="..."
-$env:COPERNICUS_CLIENT_SECRET="..."
-$env:DEEPSEEK_API_KEY="..."
 py -m uvicorn app:app --reload
 ```
 Открыть http://127.0.0.1:8000
